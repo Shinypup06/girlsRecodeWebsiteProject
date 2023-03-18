@@ -1,0 +1,17 @@
+body{
+    margin:0px;
+}
+
+#mainHeader{
+    font-family: "papyrus";
+    text-align: center;
+    font-size: 45;
+    color:black;
+    padding-top: 250px;
+    padding-bottom: 200px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin:0px;
+    background-image: url("surveyStatsBG.png");
+    background-size: cover;
+}

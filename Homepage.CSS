@@ -1,11 +1,40 @@
 #mainHeader{
     font-family: "papyrus";
     text-align: center;
+    font-size: 45;
+    color:black;
+    padding-top: 250px;
+    padding-bottom: 200px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin:0px;
+    background-image: url("homepageBG.png");
+    background-size: cover;
 }
 
 p{
     font-family: "garamond";
     color: black;
+}
+h2{
+    color:black;
+}
+
+.mainBody{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+
+}
+
+
+
+body{
+    margin:0px;
+    background-color: white;
 }
 
 
