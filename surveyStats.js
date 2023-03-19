@@ -1,17 +1,19 @@
-let FGGL = JSON.parse(sessionStorage.getItem("FAvSalaryGGL"));
-let MGGL = JSON.parse(sessionStorage.getItem("MAvSalaryGGL"));
+function refreshValues(){
+    let FGGL = sessionStorage.getItem("FAvSalaryGGL");
+    let MGGL = sessionStorage.getItem("MAvSalaryGGL");
 
-let FAPPL = JSON.parse(sessionStorage.getItem("FAvSalaryAPPL"));
-let MAPPL = JSON.parse(sessionStorage.getItem("MAvSalaryAPPL"));
+    let FAPPL = sessionStorage.getItem("FAvSalaryAPPL");
+    let MAPPL = sessionStorage.getItem("MAvSalaryAPPL");
 
-let FOMC = JSON.parse(sessionStorage.getItem("FAvSalaryOMC"));
-let MOMC = JSON.parse(sessionStorage.getItem("MAvSalaryOMC"));
+    let FOMC = sessionStorage.getItem("FAvSalaryOMC");
+    let MOMC = sessionStorage.getItem("MAvSalaryOMC");
 
-let FBAC = JSON.parse(sessionStorage.getItem("FAvSalaryBAC"));
-let MBAC = JSON.parse(sessionStorage.getItem("MAvSalaryBAC"));
+    let FBAC = sessionStorage.getItem("FAvSalaryBAC");
+    let MBAC = sessionStorage.getItem("MAvSalaryBAC");
 
-let FCVS = JSON.parse(sessionStorage.getItem("FAvSalaryCVS"));
-let MCVS = JSON.parse(sessionStorage.getItem("MAvSalaryCVS"));
+    let FCVS = sessionStorage.getItem("FAvSalaryCVS");
+    let MCVS = sessionStorage.getItem("MAvSalaryCVS");
 
-let FUNH = JSON.parse(sessionStorage.getItem("FAvSalaryUNH"));
-let MUNH = JSON.parse(sessionStorage.getItem("MAvSalaryUNH"));
+    let FUNH = sessionStorage.getItem("FAvSalaryUNH");
+    let MUNH = sessionStorage.getItem("MAvSalaryUNH");
+}

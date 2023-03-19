@@ -90,46 +90,71 @@ function storeValues(){
 
   //add values to the list if email is not duped
   if(!emailList.includes(email)){
+
     if (document.getElementById("FemaleBubble").checked || document.getElementById("NBBubble").checked){
 
       if(company=="Google"){
         FsalaryGGL.push(salary);
+        sessionStorage.setItem("firstResponseFGGL", "False");
+        sessionStorage.setItem("FAvSalaryGGL", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(FsalaryGGL.length));
       }
       else if(company=="Apple"){
         FsalaryAPPL.push(salary);
+        sessionStorage.setItem("firstResponseFAPPL", "False");
+        sessionStorage.setItem("FAvSalaryAPPL", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(FsalaryAPPL.length));
       }
       else if(company=="Omnicon Group"){
         FsalaryOMC.push(salary);
+        sessionStorage.setItem("firstResponseFOMC", "False");
+        sessionStorage.setItem("FAvSalaryOMC", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(FsalaryOMC.length));
       }
       else if(company=="Bank of America"){
         FsalaryBAC.push(salary);
+        sessionStorage.setItem("firstResponseFBAC", "False");
+        sessionStorage.setItem("FAvSalaryBAC", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(FsalaryBAC.length));
       }
       else if(company=="CVS Health Corp."){
         FsalaryCVS.push(salary);
+        sessionStorage.setItem("firstResponseFCVS", "False");
+        sessionStorage.setItem("FAvSalaryCVS", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(FsalaryCVS.length));
       }
       else if(company=="UnitedHealth Group Inc."){
         FsalaryUNH.push(salary);
+        sessionStorage.setItem("firstResponseFUNH", "False");
+        sessionStorage.setItem("FAvSalaryUNH", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(FsalaryUNH.length));
       }
     }
     else if (document.getElementById("MaleBubble").checked){
 
       if(company=="Google"){
         MsalaryGGL.push(salary);
+        sessionStorage.setItem("firstResponseMGGL", "False");
+        sessionStorage.setItem("MAvSalaryGGL", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(MsalaryGGL.length));
       }
       else if(company=="Apple"){
         MsalaryAPPL.push(salary);
+        sessionStorage.setItem("firstResponseMAPPL", "False");
+        sessionStorage.setItem("MAvSalaryAPPL", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(MsalaryAPPL.length));
       }
       else if(company=="Omnicon Group"){
         MsalaryOMC.push(salary);
+        sessionStorage.setItem("firstResponseMOMC", "False");
+        sessionStorage.setItem("MAvSalaryOMC", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(MsalaryOMC.length));
       }
       else if(company=="Bank of America"){
         MsalaryBAC.push(salary);
+        sessionStorage.setItem("firstResponseMBAC", "False");
+        sessionStorage.setItem("MAvSalaryBAC", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(MsalaryBAC.length));
       }
       else if(company=="CVS Health Corp."){
         MsalaryCVS.push(salary);
+        sessionStorage.setItem("firstResponseMCVS", "False");
+        sessionStorage.setItem("MAvSalaryCVS", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(MsalaryCVS.length));
       }
       else if(company=="UnitedHealth Group Inc."){
         MsalaryUNH.push(salary);
+        sessionStorage.setItem("firstResponseMUNH", "False");
+        sessionStorage.setItem("MAvSalaryUNH", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(MsalaryUNH.length));
       }
     }
 
@@ -139,26 +164,7 @@ function storeValues(){
   
     console.log(emailList);
     console.log(company);
-    console.log(salary)
-
-
-
-    //DOING THE CALCULATIONS & SAVING THE VALUES TO SESSION STORAGE (average salary for males vs gender minorities)
-
-    //females
-      sessionStorage.setItem("FAvSalaryGGL", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(FsalaryGGL.length));
-      sessionStorage.setItem("FAvSalaryAPPL", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(FsalaryAPPL.length));
-      sessionStorage.setItem("FAvSalaryOMC", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(FsalaryOMC.length));
-      sessionStorage.setItem("FAvSalaryBAC", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(FsalaryBAC.length));
-      sessionStorage.setItem("FAvSalaryCVS", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(FsalaryCVS.length));
-      sessionStorage.setItem("FAvSalaryUNH", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(FsalaryUNH.length));
-    //males
-      sessionStorage.setItem("MAvSalaryGGL", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(MsalaryGGL.length));
-      sessionStorage.setItem("MAvSalaryAPPL", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(MsalaryAPPL.length));
-      sessionStorage.setItem("MAvSalaryOMC", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(MsalaryOMC.length));
-      sessionStorage.setItem("MAvSalaryBAC", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(MsalaryBAC.length));
-      sessionStorage.setItem("MAvSalaryCVS", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(MsalaryCVS.length));
-      sessionStorage.setItem("MAvSalaryUNH", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(MsalaryUNH.length));
+    console.log(salary)   
 
   }
 }
