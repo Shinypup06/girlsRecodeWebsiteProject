@@ -15,3 +15,7 @@ body{
     background-image: url("surveyStatsBG.png");
     background-size: cover;
 }
+
+h2{
+    text-align: center;
+}
