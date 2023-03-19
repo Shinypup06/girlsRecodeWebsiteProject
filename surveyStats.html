@@ -85,5 +85,101 @@ var chart = new google.visualization.BarChart(document.getElementById('Apple'));
   chart.draw(data, options);
 }
 </script>
+
+<!-- Omnicom Group Graph -->
+
+<div id="Omnicom" style="width:100%; max-width:600px; height:500px;"></div>
+
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Gender', 'Gender'],
+  ['Males', 85],
+  ['Gender Minorities (Females & Non-Binary)', 23]
+]);
+
+var options = {
+  title:'Omnicom Group'
+};
+
+var chart = new google.visualization.BarChart(document.getElementById('Omnicom'));
+  chart.draw(data, options);
+}
+</script>
+
+<!-- Bank of America Graph -->
+
+<div id="BOA" style="width:100%; max-width:600px; height:500px;"></div>
+
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Gender', 'Gender'],
+  ['Males', 85],
+  ['Gender Minorities (Females & Non-Binary)', 23]
+]);
+
+var options = {
+  title:'Bank of America'
+};
+
+var chart = new google.visualization.BarChart(document.getElementById('BOA'));
+  chart.draw(data, options);
+}
+</script>
+
+<!-- CVS Graph -->
+
+<div id="CVS" style="width:100%; max-width:600px; height:500px;"></div>
+
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Gender', 'Gender'],
+  ['Males', 85],
+  ['Gender Minorities (Females & Non-Binary)', 23]
+]);
+
+var options = {
+  title:'CVS Health Corp.'
+};
+
+var chart = new google.visualization.BarChart(document.getElementById('CVS'));
+  chart.draw(data, options);
+}
+</script>
+
+<!-- United Health Corp Graph -->
+
+<div id="UHC" style="width:100%; max-width:600px; height:500px;"></div>
+
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Gender', 'Gender'],
+  ['Males', 85],
+  ['Gender Minorities (Females & Non-Binary)', 23]
+]);
+
+var options = {
+  title:'United Health Group Inc.'
+};
+
+var chart = new google.visualization.BarChart(document.getElementById('UHC'));
+  chart.draw(data, options);
+}
+</script>
 </body>
 </html>
