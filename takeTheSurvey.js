@@ -43,9 +43,6 @@ var subjectObject = {
 
   const emailList = [];
 
-  let female = 0;
-  let male = 0;
-  let nb = 0;
 
   const FsalaryGGL = [];
   const MsalaryGGL = [];
@@ -94,7 +91,7 @@ function storeValues(){
   //add values to the list if email is not duped
   if(!emailList.includes(email)){
     if (document.getElementById("FemaleBubble").checked || document.getElementById("NBBubble").checked){
-      female ++;
+
       if(company=="Google"){
         FsalaryGGL.push(salary);
       }
@@ -115,7 +112,7 @@ function storeValues(){
       }
     }
     else if (document.getElementById("MaleBubble").checked){
-      male ++;
+
       if(company=="Google"){
         MsalaryGGL.push(salary);
       }
@@ -162,11 +159,6 @@ function storeValues(){
       sessionStorage.setItem("MAvSalaryBAC", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(MsalaryBAC.length));
       sessionStorage.setItem("MAvSalaryCVS", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(MsalaryCVS.length));
       sessionStorage.setItem("MAvSalaryUNH", JSON.stringify(FsalaryGGL.reduce((partialSum, a) => partialSum + a, 0))/(MsalaryUNH.length));
-
-    //did session storage work?
-    console.log("is this number the same as above? if so ss worked")
-    console.log(JSON.parse(sessionStorage.getItem("FsalaryGGL")));
-
 
   }
 }
