@@ -1,25 +1,17 @@
 var subjectObject = {
     "Technology": {
-      "Google": ["Data Analyst", "Software Engineer", "Operations Manager"],
-      "Apple": ["Data Analyst", "Software Engineer", "Operations Manager"],
-      "Facebook": ["Data Analyst", "Software Engineer", "Operations Manager"],
-      "Linkedln": ["Data Analyst", "Software Engineer", "Operations Manager"],
-      "Samsung": ["Data Analyst", "Software Engineer", "Operations Manager"],
-      "Microsoft": ["Data Analyst", "Software Engineer", "Operations Manager"]
+      "Google": ["Data Analyst", "Software Engineer", "Operations Manager", "Data Scientist", "Cybersecurity Analysist", "Customer Support", "Tech Support", "IT Coordinator", "UX/UI Designer"],
+      "Apple": ["Data Analyst", "Software Engineer", "Operations Manager", "Data Scientist", "Cybersecurity Analysist", "Customer Support", "Tech Support", "IT Coordinator", "UX/UI Designer"],
 
     },
     "Buisness/Finance": {
-      "Omnicom Group": ["Marketing", "Advertisment", "Sales", "Finance"],
-      "Bank of America": ["Marketing", "Advertisment", "Sales", "Finance"],
-      "WPP": ["Marketing", "Advertisment", "Sales", "Finance"],
-      "Chase": ["Marketing", "Advertisment", "Sales", "Finance"]
+      "Omnicom Group": ["Marketing", "Advertisment", "Sales", "Finance Manager", "Accountant", "Tax associate", "Data analyst", "Investment Banker", "Insurance advisor"],
+      "Bank of America": ["Marketing", "Advertisment", "Sales", "Finance Manager", "Accountant", "Tax associate", "Data analyst", "Investment Banker", "Insurance advisor"]
       
     },
     "Healthcare": {
-      "CVS Health Corp.": ["Pharmacist", "Nurse", "Doctor", "Therapist", "Anesthesiologist"],
-      "UnitedHealth Group Inc.": ["Pharmacist", "Nurse", "Doctor", "Therapist", "Anesthesiologist"],
-      "Cardinal Health Inc.": ["Pharmacist", "Nurse", "Doctor", "Therapist", "Anesthesiologist"],
-      "Pfizer": ["Pharmacist", "Nurse", "Doctor", "Therapist", "Anesthesiologist"],
+      "CVS Health Corp.": ["Pharmacist", "Nurse", "Doctor", "Therapist", "Anesthesiologist", "Surgeon", "Pharmacy technician", "Nutritionist"],
+      "UnitedHealth Group Inc.": ["Pharmacist", "Nurse", "Doctor", "Therapist", "Anesthesiologist", "Surgeon", "Pharmacy technician", "Nutritionist"]
     }
   }
   window.onload = function() {
@@ -60,10 +52,11 @@ function storeValues(){
   let email = document.getElementById("email").value;
   let salary = document.getElementById("salary").value;
 
-  if (document.getElementById("FemaleBubble").checked = True){
+
+  if (document.getElementById("FemaleBubble").checked){
     female ++;
   }
-  else if (document.getElementById("MaleBubble").checked = True){
+  else if (document.getElementById("MaleBubble").checked){
     male ++;
   }
   else{
@@ -72,5 +65,6 @@ function storeValues(){
   
   emailList.push(email);
   salaryList.push(salary);
-  alert(male);
+  
+  console.log(male);
 }
