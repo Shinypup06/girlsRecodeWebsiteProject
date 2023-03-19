@@ -21,8 +21,8 @@ function refreshValues(){
     console.log("Male google: " + MGGL);
     console.log("Female apple: " + FAPPL);
     console.log("male apple: " + MAPPL);
-    console.log("Female omnicron: " + FOMC);
-    console.log("Male omnicron: " + MOMC);
+    console.log("Female omnicom: " + FOMC);
+    console.log("Male omnicom: " + MOMC);
     console.log("Female bank of america: " + FBAC);
     console.log("Male bank of america: " + MBAC);
     console.log("Female CVS: " + FCVS);

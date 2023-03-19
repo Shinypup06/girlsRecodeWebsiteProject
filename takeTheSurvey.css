@@ -16,12 +16,22 @@ ul{
     margin:0px;
     background-image: url("takeTheSurveyBG.png");
     background-size: cover;
-    font-family: "Ebrima";
-    font-style: bold;
 }
 
 h2{
     font-family: "Copperplate Gothic Light"
+}
+
+.FAQ{
+    font-family:"Ebrima";
+    font-style: bold;
+    color: black;
+}
+
+p{
+    font-family: "Ebrima";
+    font-style: bold;
+    color:black;
 }
 
 .mainBody{
