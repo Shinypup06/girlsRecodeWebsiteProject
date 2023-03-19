@@ -2,6 +2,8 @@ ul{
     list-style-type: none;
 }
 
+
+
 #mainHeader{
     font-family: "papyrus";
     text-align: center;
@@ -14,8 +16,13 @@ ul{
     margin:0px;
     background-image: url("takeTheSurveyBG.png");
     background-size: cover;
+    font-family: "Ebrima";
+    font-style: bold;
 }
 
+h2{
+    font-family: "Copperplate Gothic Light"
+}
 
 .mainBody{
     margin-left: 15%;
