@@ -16,4 +16,6 @@ function refreshValues(){
 
     let FUNH = sessionStorage.getItem("FAvSalaryUNH");
     let MUNH = sessionStorage.getItem("MAvSalaryUNH");
+
+    console.log(FGGL);
 }

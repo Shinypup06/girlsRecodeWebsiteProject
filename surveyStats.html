@@ -38,6 +38,52 @@
     </div>
 
     <!-- graphs -->
-    
+
+<!-- Google Graph -->
+<div id="Google" style="width:100%; max-width:600px; height:500px;"></div>
+
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Gender', 'Gender'],
+  ['Males', 55],
+  ['Gender Minorities (Females & Non-Binary)', 49]
+]);
+
+var options = {
+  title:'Google'
+};
+
+var chart = new google.visualization.BarChart(document.getElementById('Google'));
+  chart.draw(data, options);
+}
+</script>
+
+<!-- Apple Graph -->
+
+<div id="Apple" style="width:100%; max-width:600px; height:500px;"></div>
+
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Gender', 'Gender'],
+  ['Males', 85],
+  ['Gender Minorities (Females & Non-Binary)', 23]
+]);
+
+var options = {
+  title:'Apple'
+};
+
+var chart = new google.visualization.BarChart(document.getElementById('Apple'));
+  chart.draw(data, options);
+}
+</script>
 </body>
 </html>
