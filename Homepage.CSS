@@ -71,6 +71,11 @@ body{
   padding: 14px 40px;
   font-size: 16px
 }
+
+ul.a {
+  list-style-type: circle;
+}
+
 /* # = id */
 /* . = class */
 /*  marker = all elements of that marker */
