@@ -16,10 +16,10 @@ var subjectObject = {
       
     },
     "Healthcare": {
-      "CVS Health Corp.": ["Pharmacist", "Nurse", "Doctor", "Therapist"],
-      "UnitedHealth Group Inc.": ["Pharmacist", "Nurse", "Doctor", "Therapist"],
-      "Cardinal Health Inc.": ["Pharmacist", "Nurse", "Doctor", "Therapist"],
-      "Pfizer": ["Pharmacist", "Nurse", "Doctor", "Therapist"],
+      "CVS Health Corp.": ["Pharmacist", "Nurse", "Doctor", "Therapist", "Anesthesiologist"],
+      "UnitedHealth Group Inc.": ["Pharmacist", "Nurse", "Doctor", "Therapist", "Anesthesiologist"],
+      "Cardinal Health Inc.": ["Pharmacist", "Nurse", "Doctor", "Therapist", "Anesthesiologist"],
+      "Pfizer": ["Pharmacist", "Nurse", "Doctor", "Therapist", "Anesthesiologist"],
     }
   }
   window.onload = function() {
