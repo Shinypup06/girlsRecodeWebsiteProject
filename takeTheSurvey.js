@@ -48,3 +48,14 @@ var subjectObject = {
       }
     }
   }
+
+ const emailList = [];
+ const salaryList = [];
+
+function storeValues(){
+  let email = document.getElementById("email").value
+  let salary = document.getElementById("salary").value
+  emailList.push(email)
+  salaryList.push(salary)
+  alert(emailList)
+}
