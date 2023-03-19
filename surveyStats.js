@@ -1,4 +1,4 @@
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 
 function refreshValues(){
     let FGGL = sessionStorage.getItem("FAvSalaryGGL");
@@ -32,102 +32,106 @@ function refreshValues(){
     console.log("Female UnitedHealth group: " + FUNH);
     console.log("Male UnitedHealth group: " + MUNH);
 
-    // Google
+// Google
 google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawChartGoogle);
 
-function drawChart() {
-var data = google.visualization.arrayToDataTable([
-  ['Gender', 'Gender'],
-  ['Males', FGGL],
-  ['Gender Minorities (Females & Non-Binary)', MGGL]
+function drawChartGoogle() {
+var dataGoogle = google.visualization.arrayToDataTable([
+  ['Gender', 'Salary'],
+  ['Males', parseInt(MGGL)], 
+  ['Gender Minorities (Females & Non-Binary)', parseInt(FGGL)]
 ]);
 
-var options = {
+var optionsGoogle = {
   title:'Google'
 };
 
-var chart = new google.visualization.BarChart(document.getElementById('Google'));
-  chart.draw(data, options);
+var Googlechart = new google.visualization.BarChart(document.getElementById('Google'));
+  Googlechart.draw(dataGoogle, optionsGoogle);
 }
 
 
-// Apple
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
 
-function drawChart() {
-var data = google.visualization.arrayToDataTable([
-  ['Gender', 'Gender'],
-  ['Males', MAPPL],
-  ['Gender Minorities (Females & Non-Binary)', FAPPL]
+
+//Apple
+
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChartApple);
+
+
+function drawChartApple() {
+var dataApple = google.visualization.arrayToDataTable([
+  ['Gender', 'Salary'],
+  ['Males', parseInt(MAPPL)],
+  ['Gender Minorities (Females & Non-Binary)', parseInt(FAPPL)]
 ]);
 
-var options = {
+var optionsApple = {
   title:'Apple'
 };
 
-var chart = new google.visualization.BarChart(document.getElementById('Apple'));
-  chart.draw(data, options);
+var Applechart = new google.visualization.BarChart(document.getElementById('Apple'));
+  Applechart.draw(dataApple, optionsApple);
 }
 
+
 // Omnicom Group
-
 google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawChartOmnicom);
 
-function drawChart() {
-var data = google.visualization.arrayToDataTable([
-  ['Gender', 'Gender'],
-  ['Males', 85],
-  ['Gender Minorities (Females & Non-Binary)', 23]
+function drawChartOmnicom() {
+var dataOMC = google.visualization.arrayToDataTable([
+  ['Gender', 'Salary'],
+  ['Males', parseInt(MOMC)],
+  ['Gender Minorities (Females & Non-Binary)', parseInt(FOMC)]
 ]);
 
-var options = {
+var optionsOMC = {
   title:'Omnicom Group'
 };
 
-var chart = new google.visualization.BarChart(document.getElementById('Omnicom'));
-  chart.draw(data, options);
+var chartOMC = new google.visualization.BarChart(document.getElementById('Omnicom'));
+  chartOMC.draw(dataOMC, optionsOMC);
 }
 
-// BOA
+// BAC
 
 google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawChartBAC);
 
-function drawChart() {
-var data = google.visualization.arrayToDataTable([
-  ['Gender', 'Gender'],
-  ['Males', 85],
-  ['Gender Minorities (Females & Non-Binary)', 23]
+function drawChartBAC() {
+var dataBAC = google.visualization.arrayToDataTable([
+  ['Gender', 'Salary'],
+  ['Males', parseInt(MBAC)],
+  ['Gender Minorities (Females & Non-Binary)', parseInt(MBAC)]
 ]);
 
-var options = {
+var optionsBAC = {
   title:'Bank of America'
 };
 
-var chart = new google.visualization.BarChart(document.getElementById('BOA'));
-  chart.draw(data, options);
+var chartBAC = new google.visualization.BarChart(document.getElementById('BOA'));
+  chartBAC.draw(dataBAC, optionsBAC);
 }
 
 // CVS
 google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawChartCVS);
 
-function drawChart() {
-var data = google.visualization.arrayToDataTable([
-  ['Gender', 'Gender'],
-  ['Males', 85],
-  ['Gender Minorities (Females & Non-Binary)', 23]
+function drawChartCVS() {
+var CVSdata = google.visualization.arrayToDataTable([
+  ['Gender', 'Salary'],
+  ['Males', parseInt(MCVS)],
+  ['Gender Minorities (Females & Non-Binary)', parseInt(FCVS)]
 ]);
 
-var options = {
+var optionsCVS = {
   title:'CVS Health Corp.'
 };
 
-var chart = new google.visualization.BarChart(document.getElementById('CVS'));
-  chart.draw(data, options);
+var CVSchart = new google.visualization.BarChart(document.getElementById('CVS'));
+  CVSchart.draw(CVSdata, optionsCVS);
 }
 
 // United Health Group
@@ -137,9 +141,9 @@ google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
 var data = google.visualization.arrayToDataTable([
-  ['Gender', 'Gender'],
-  ['Males', 34],
-  ['Gender Minorities (Females & Non-Binary)', 23]
+  ['Gender', 'Salary'],
+  ['Males', parseInt(MUNH)],
+  ['Gender Minorities (Females & Non-Binary)', parseInt(FUNH)]
 ]);
 
 var options = {
@@ -149,5 +153,6 @@ var options = {
 var chart = new google.visualization.BarChart(document.getElementById('UHC'));
   chart.draw(data, options);
 }
+
 }
 
