@@ -51,11 +51,26 @@ var subjectObject = {
 
  const emailList = [];
  const salaryList = [];
+ let female = 0;
+ let male = 0;
+ let nb = 0;
+
 
 function storeValues(){
-  let email = document.getElementById("email").value
-  let salary = document.getElementById("salary").value
-  emailList.push(email)
-  salaryList.push(salary)
-  alert(emailList)
+  let email = document.getElementById("email").value;
+  let salary = document.getElementById("salary").value;
+
+  if (document.getElementById("FemaleBubble").checked = True){
+    female ++;
+  }
+  else if (document.getElementById("MaleBubble").checked = True){
+    male ++;
+  }
+  else{
+    nb ++;
+  }
+  
+  emailList.push(email);
+  salaryList.push(salary);
+  alert(male);
 }
