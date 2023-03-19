@@ -17,5 +17,16 @@ function refreshValues(){
     let FUNH = sessionStorage.getItem("FAvSalaryUNH");
     let MUNH = sessionStorage.getItem("MAvSalaryUNH");
 
-    console.log(FGGL);
+    console.log("Female google: " + FGGL);
+    console.log("Male google: " + MGGL);
+    console.log("Female apple: " + FAPPL);
+    console.log("male apple: " + MAPPL);
+    console.log("Female omnicron: " + FOMC);
+    console.log("Male omnicron: " + MOMC);
+    console.log("Female bank of america: " + FBAC);
+    console.log("Male bank of america: " + MBAC);
+    console.log("Female CVS: " + FCVS);
+    console.log("Male CVS: " + MCVS);
+    console.log("Female UnitedHealth group: " + FUNH);
+    console.log("Male UnitedHealth group: " + MUNH);
 }
